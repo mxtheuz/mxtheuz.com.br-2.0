@@ -8,7 +8,7 @@ import Suport from "./components/Suport";
 import axios from "axios"
 
 export async function getServerSideProps() {
-    const result = await axios("")     
+    const result = await axios("URL_FROM_GIST")     
     return {
         props: {
             skills: result.data.content
